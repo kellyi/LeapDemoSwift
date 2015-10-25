@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF56D17A1BDB489600DC6990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D1791BDB489600DC6990 /* AppDelegate.swift */; };
+		DF56D17C1BDB489600DC6990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D17B1BDB489600DC6990 /* ViewController.swift */; };
+		DF56D17E1BDB489600DC6990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF56D17D1BDB489600DC6990 /* Assets.xcassets */; };
+		DF56D1811BDB489600DC6990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF56D17F1BDB489600DC6990 /* Main.storyboard */; };
+		DF56D18E1BDB48A900DC6990 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF56D18C1BDB48A900DC6990 /* LeapObjectiveC.mm */; settings = {ASSET_TAGS = (); }; };
+		DF56D18F1BDB48A900DC6990 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF56D18D1BDB48A900DC6990 /* libLeap.dylib */; settings = {ASSET_TAGS = (); }; };
+		DF56D1921BDB48E800DC6990 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF56D18D1BDB48A900DC6990 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DF56D1941BDB490100DC6990 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D1931BDB490100DC6990 /* Example.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF56D1911BDB48E100DC6990 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				DF56D1921BDB48E800DC6990 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF56D1761BDB489600DC6990 /* LeapDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF56D1791BDB489600DC6990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF56D17B1BDB489600DC6990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF56D17D1BDB489600DC6990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF56D1801BDB489600DC6990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF56D1821BDB489600DC6990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF56D1881BDB48A900DC6990 /* LeapDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeapDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF56D1891BDB48A900DC6990 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		DF56D18A1BDB48A900DC6990 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		DF56D18B1BDB48A900DC6990 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		DF56D18C1BDB48A900DC6990 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		DF56D18D1BDB48A900DC6990 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		DF56D1931BDB490100DC6990 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF56D1731BDB489600DC6990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF56D18F1BDB48A900DC6990 /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF56D16D1BDB489600DC6990 = {
+			isa = PBXGroup;
+			children = (
+				DF56D1781BDB489600DC6990 /* LeapDemoSwift */,
+				DF56D1771BDB489600DC6990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF56D1771BDB489600DC6990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF56D1761BDB489600DC6990 /* LeapDemoSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF56D1781BDB489600DC6990 /* LeapDemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DF56D1791BDB489600DC6990 /* AppDelegate.swift */,
+				DF56D17B1BDB489600DC6990 /* ViewController.swift */,
+				DF56D17D1BDB489600DC6990 /* Assets.xcassets */,
+				DF56D17F1BDB489600DC6990 /* Main.storyboard */,
+				DF56D1821BDB489600DC6990 /* Info.plist */,
+				DF56D1931BDB490100DC6990 /* Example.swift */,
+				DF56D1901BDB48CF00DC6990 /* LeapSDK */,
+			);
+			path = LeapDemoSwift;
+			sourceTree = "<group>";
+		};
+		DF56D1901BDB48CF00DC6990 /* LeapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DF56D1891BDB48A900DC6990 /* Leap.h */,
+				DF56D18A1BDB48A900DC6990 /* LeapMath.h */,
+				DF56D18B1BDB48A900DC6990 /* LeapObjectiveC.h */,
+				DF56D18C1BDB48A900DC6990 /* LeapObjectiveC.mm */,
+				DF56D18D1BDB48A900DC6990 /* libLeap.dylib */,
+				DF56D1881BDB48A900DC6990 /* LeapDemoSwift-Bridging-Header.h */,
+			);
+			name = LeapSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF56D1751BDB489600DC6990 /* LeapDemoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF56D1851BDB489600DC6990 /* Build configuration list for PBXNativeTarget "LeapDemoSwift" */;
+			buildPhases = (
+				DF56D1721BDB489600DC6990 /* Sources */,
+				DF56D1731BDB489600DC6990 /* Frameworks */,
+				DF56D1741BDB489600DC6990 /* Resources */,
+				DF56D1911BDB48E100DC6990 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapDemoSwift;
+			productName = LeapDemoSwift;
+			productReference = DF56D1761BDB489600DC6990 /* LeapDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF56D16E1BDB489600DC6990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kelly Innes";
+				TargetAttributes = {
+					DF56D1751BDB489600DC6990 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = DF56D1711BDB489600DC6990 /* Build configuration list for PBXProject "LeapDemoSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF56D16D1BDB489600DC6990;
+			productRefGroup = DF56D1771BDB489600DC6990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF56D1751BDB489600DC6990 /* LeapDemoSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF56D1741BDB489600DC6990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF56D17E1BDB489600DC6990 /* Assets.xcassets in Resources */,
+				DF56D1811BDB489600DC6990 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF56D1721BDB489600DC6990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF56D18E1BDB48A900DC6990 /* LeapObjectiveC.mm in Sources */,
+				DF56D1941BDB490100DC6990 /* Example.swift in Sources */,
+				DF56D17C1BDB489600DC6990 /* ViewController.swift in Sources */,
+				DF56D17A1BDB489600DC6990 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF56D17F1BDB489600DC6990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF56D1801BDB489600DC6990 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF56D1831BDB489600DC6990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF56D1841BDB489600DC6990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DF56D1861BDB489600DC6990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LeapDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeapDemoSwift",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellyinnes.LeapDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeapDemoSwift/LeapDemoSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF56D1871BDB489600DC6990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LeapDemoSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeapDemoSwift",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kellyinnes.LeapDemoSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeapDemoSwift/LeapDemoSwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF56D1711BDB489600DC6990 /* Build configuration list for PBXProject "LeapDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF56D1831BDB489600DC6990 /* Debug */,
+				DF56D1841BDB489600DC6990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF56D1851BDB489600DC6990 /* Build configuration list for PBXNativeTarget "LeapDemoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF56D1861BDB489600DC6990 /* Debug */,
+				DF56D1871BDB489600DC6990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF56D16E1BDB489600DC6990 /* Project object */;
+}
