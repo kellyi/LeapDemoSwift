@@ -10,7 +10,11 @@ import Foundation
 
 class Example: NSObject, LeapDelegate {
     
+    static let sharedInstance = Example()
+    
     let controller = LeapController()
+    var rightHandPosition = LeapVector()
+    var leftHandPosition = LeapVector()
     
     func run() {
         controller.addDelegate(self)
@@ -49,9 +53,16 @@ class Example: NSObject, LeapDelegate {
     
     func onFrame(controller: LeapController!) {
         let currentFrame = controller.frame(0) as LeapFrame
-        let fingers = currentFrame.fingers as! [LeapFinger]
-        let extendedFingers = fingers.filter { $0.isExtended }
-        print(extendedFingers.count)
+        let hands = currentFrame.hands as! [LeapHand]
+        for hand in hands {
+            if hand.isLeft {
+                leftHandPosition = hand.palmPosition
+                print("left hand position: \(leftHandPosition)")
+            } else if hand.isRight {
+                rightHandPosition = hand.palmPosition
+                print("right hand position: \(rightHandPosition)")
+            }
+        }
     }
     
     func onFocusGained(controller: LeapController!) {
