@@ -1,5 +1,5 @@
 //
-//  Example.swift
+//  LeapMotionManager.swift
 //  LeapDemoSwift
 //
 //  Created by Kelly Innes on 10/24/15.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Example: NSObject, LeapDelegate {
+class LeapMotionManager: NSObject, LeapDelegate {
     
-    static let sharedInstance = Example()
+    static let sharedInstance = LeapMotionManager()
     
     let controller = LeapController()
     var rightHandPosition = LeapVector()

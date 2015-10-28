@@ -17,8 +17,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        //let example = Example()
-        //example.run()
         if let scene = GameScene(fileNamed:"GameScene") {
             /* Set the scale mode to scale to fit the window */
             scene.scaleMode = .AspectFill
@@ -30,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             self.skView!.showsFPS = true
             self.skView!.showsNodeCount = true
-            Example.sharedInstance.run()
+            LeapMotionManager.sharedInstance.run()
         }
     }
 

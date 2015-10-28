@@ -1,6 +1,6 @@
 //
 //  GameScene.swift
-//  light
+//  LeapDemoSwift
 //
 //  Created by Kelly Innes on 10/27/15.
 //  Copyright (c) 2015 Kelly Innes. All rights reserved.
@@ -30,7 +30,7 @@ class GameScene: SKScene {
     }
     
     func updateHandPositions() {
-        let newRightHandPosition = Example.sharedInstance.rightHandPosition as LeapVector
+        let newRightHandPosition = LeapMotionManager.sharedInstance.rightHandPosition as LeapVector
         var newRightHandX = newRightHandPosition.x
         var newRightHandY = newRightHandPosition.y
         if newRightHandX > 225.0 {
@@ -45,7 +45,7 @@ class GameScene: SKScene {
         }
         rightHand.position = CGPoint(x: self.size.width/2 + CGFloat(newRightHandX), y: self.size.height/2 + CGFloat(newRightHandY/2))
         
-        let newLeftHandPosition = Example.sharedInstance.leftHandPosition as LeapVector
+        let newLeftHandPosition = LeapMotionManager.sharedInstance.leftHandPosition as LeapVector
         var newLeftHandX = newLeftHandPosition.x
         var newLeftHandY = newLeftHandPosition.y
         if newLeftHandX > 225.0 {
