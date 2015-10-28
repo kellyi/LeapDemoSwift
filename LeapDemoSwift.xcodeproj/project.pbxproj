@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DF56D17A1BDB489600DC6990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D1791BDB489600DC6990 /* AppDelegate.swift */; };
-		DF56D17C1BDB489600DC6990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D17B1BDB489600DC6990 /* ViewController.swift */; };
 		DF56D17E1BDB489600DC6990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF56D17D1BDB489600DC6990 /* Assets.xcassets */; };
-		DF56D1811BDB489600DC6990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF56D17F1BDB489600DC6990 /* Main.storyboard */; };
-		DF56D18E1BDB48A900DC6990 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF56D18C1BDB48A900DC6990 /* LeapObjectiveC.mm */; settings = {ASSET_TAGS = (); }; };
-		DF56D18F1BDB48A900DC6990 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF56D18D1BDB48A900DC6990 /* libLeap.dylib */; settings = {ASSET_TAGS = (); }; };
-		DF56D1921BDB48E800DC6990 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF56D18D1BDB48A900DC6990 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		DF56D1941BDB490100DC6990 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D1931BDB490100DC6990 /* Example.swift */; settings = {ASSET_TAGS = (); }; };
+		DF56D1941BDB490100DC6990 /* LeapMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56D1931BDB490100DC6990 /* LeapMotionManager.swift */; settings = {ASSET_TAGS = (); }; };
+		DFBD9EB31BE03513005845D5 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFBD9EB11BE03513005845D5 /* LeapObjectiveC.mm */; settings = {ASSET_TAGS = (); }; };
+		DFBD9EB41BE03513005845D5 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBD9EB21BE03513005845D5 /* libLeap.dylib */; settings = {ASSET_TAGS = (); }; };
+		DFBD9EB81BE03699005845D5 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFBD9EB21BE03513005845D5 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DFBD9EBA1BE036F1005845D5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DFBD9EB91BE036F1005845D5 /* GameScene.sks */; settings = {ASSET_TAGS = (); }; };
+		DFBD9EBC1BE03718005845D5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD9EBB1BE03718005845D5 /* GameScene.swift */; settings = {ASSET_TAGS = (); }; };
+		DFBD9EBE1BE03742005845D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBD9EBD1BE03742005845D5 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				DF56D1921BDB48E800DC6990 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBD9EB71BE03691005845D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				DFBD9EB81BE03699005845D5 /* libLeap.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,17 +43,18 @@
 /* Begin PBXFileReference section */
 		DF56D1761BDB489600DC6990 /* LeapDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF56D1791BDB489600DC6990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF56D17B1BDB489600DC6990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF56D17D1BDB489600DC6990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF56D1801BDB489600DC6990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF56D1821BDB489600DC6990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF56D1881BDB48A900DC6990 /* LeapDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeapDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		DF56D1891BDB48A900DC6990 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
-		DF56D18A1BDB48A900DC6990 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
-		DF56D18B1BDB48A900DC6990 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
-		DF56D18C1BDB48A900DC6990 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
-		DF56D18D1BDB48A900DC6990 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
-		DF56D1931BDB490100DC6990 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		DF56D1931BDB490100DC6990 /* LeapMotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeapMotionManager.swift; sourceTree = "<group>"; };
+		DFBD9EAE1BE03513005845D5 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		DFBD9EAF1BE03513005845D5 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		DFBD9EB01BE03513005845D5 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		DFBD9EB11BE03513005845D5 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		DFBD9EB21BE03513005845D5 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		DFBD9EB61BE0363B005845D5 /* LeapDemoSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeapDemoSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFBD9EB91BE036F1005845D5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DFBD9EBB1BE03718005845D5 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DFBD9EBD1BE03742005845D5 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF56D18F1BDB48A900DC6990 /* libLeap.dylib in Frameworks */,
+				DFBD9EB41BE03513005845D5 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,27 +89,28 @@
 			isa = PBXGroup;
 			children = (
 				DF56D1791BDB489600DC6990 /* AppDelegate.swift */,
-				DF56D17B1BDB489600DC6990 /* ViewController.swift */,
+				DFBD9EB91BE036F1005845D5 /* GameScene.sks */,
+				DFBD9EBB1BE03718005845D5 /* GameScene.swift */,
 				DF56D17D1BDB489600DC6990 /* Assets.xcassets */,
-				DF56D17F1BDB489600DC6990 /* Main.storyboard */,
+				DFBD9EBD1BE03742005845D5 /* MainMenu.xib */,
 				DF56D1821BDB489600DC6990 /* Info.plist */,
-				DF56D1931BDB490100DC6990 /* Example.swift */,
-				DF56D1901BDB48CF00DC6990 /* LeapSDK */,
+				DF56D1931BDB490100DC6990 /* LeapMotionManager.swift */,
+				DFBD9EAD1BE03513005845D5 /* LeapObjCSDK */,
+				DFBD9EB61BE0363B005845D5 /* LeapDemoSwift-Bridging-Header.h */,
 			);
 			path = LeapDemoSwift;
 			sourceTree = "<group>";
 		};
-		DF56D1901BDB48CF00DC6990 /* LeapSDK */ = {
+		DFBD9EAD1BE03513005845D5 /* LeapObjCSDK */ = {
 			isa = PBXGroup;
 			children = (
-				DF56D1891BDB48A900DC6990 /* Leap.h */,
-				DF56D18A1BDB48A900DC6990 /* LeapMath.h */,
-				DF56D18B1BDB48A900DC6990 /* LeapObjectiveC.h */,
-				DF56D18C1BDB48A900DC6990 /* LeapObjectiveC.mm */,
-				DF56D18D1BDB48A900DC6990 /* libLeap.dylib */,
-				DF56D1881BDB48A900DC6990 /* LeapDemoSwift-Bridging-Header.h */,
+				DFBD9EAE1BE03513005845D5 /* Leap.h */,
+				DFBD9EAF1BE03513005845D5 /* LeapMath.h */,
+				DFBD9EB01BE03513005845D5 /* LeapObjectiveC.h */,
+				DFBD9EB11BE03513005845D5 /* LeapObjectiveC.mm */,
+				DFBD9EB21BE03513005845D5 /* libLeap.dylib */,
 			);
-			name = LeapSDK;
+			path = LeapObjCSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +124,7 @@
 				DF56D1731BDB489600DC6990 /* Frameworks */,
 				DF56D1741BDB489600DC6990 /* Resources */,
 				DF56D1911BDB48E100DC6990 /* CopyFiles */,
+				DFBD9EB71BE03691005845D5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -161,7 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF56D17E1BDB489600DC6990 /* Assets.xcassets in Resources */,
-				DF56D1811BDB489600DC6990 /* Main.storyboard in Resources */,
+				DFBD9EBA1BE036F1005845D5 /* GameScene.sks in Resources */,
+				DFBD9EBE1BE03742005845D5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,25 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF56D18E1BDB48A900DC6990 /* LeapObjectiveC.mm in Sources */,
-				DF56D1941BDB490100DC6990 /* Example.swift in Sources */,
-				DF56D17C1BDB489600DC6990 /* ViewController.swift in Sources */,
+				DFBD9EBC1BE03718005845D5 /* GameScene.swift in Sources */,
+				DF56D1941BDB490100DC6990 /* LeapMotionManager.swift in Sources */,
+				DFBD9EB31BE03513005845D5 /* LeapObjectiveC.mm in Sources */,
 				DF56D17A1BDB489600DC6990 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DF56D17F1BDB489600DC6990 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF56D1801BDB489600DC6990 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DF56D1831BDB489600DC6990 /* Debug */ = {
@@ -284,6 +287,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LeapDemoSwift",
+					"$(PROJECT_DIR)/LeapDemoSwift/LeapObjCSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kellyinnes.LeapDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +307,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LeapDemoSwift",
+					"$(PROJECT_DIR)/LeapDemoSwift/LeapObjCSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kellyinnes.LeapDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,6 +334,7 @@
 				DF56D1871BDB489600DC6990 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
