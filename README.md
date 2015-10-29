@@ -11,4 +11,4 @@ Here's a current screenshot just to show it working:
 
 ![handsimage](https://github.com/kellyi/LeapDemoSwift/blob/master/hands.gif)
 
-Both the [left hand image](https://openclipart.org/detail/167378/raised-hand-in-silhouette) and the [right hand image](https://openclipart.org/detail/167377/raised-hand-in-silhouette) are from [Openclipart.org](https://openclipart.org/).
+Both the [left hand image](https://openclipart.org/detail/167378/raised-hand-in-silhouette) and the [right hand image](https://openclipart.org/detail/167377/raised-hand-in-silhouette) are from [Openclipart.org](https://openclipart.org/). The [ball image](https://openclipart.org/detail/22102/tennis-ball) is also from Openclipart.org.

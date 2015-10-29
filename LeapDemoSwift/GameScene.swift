@@ -12,17 +12,36 @@ class GameScene: SKScene {
     
     let rightHand = SKSpriteNode(imageNamed: "righthand")
     let leftHand = SKSpriteNode(imageNamed: "lefthand")
+    let ball = SKSpriteNode(imageNamed: "ball")
     
     override func didMoveToView(view: SKView) {
         self.backgroundColor = SKColor.grayColor()
-        rightHand.position = CGPoint(x: self.size.width/2 + 250, y: self.size.height/2)
+        //rightHand.position = CGPoint(x: (self.size.width/2) + 500, y: self.size.height/2)
         rightHand.xScale = 0.1
         rightHand.yScale = 0.1
+        rightHand.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(rightHand.size.width, rightHand.size.height))
+        rightHand.physicsBody?.collisionBitMask = 0
+        rightHand.physicsBody?.categoryBitMask = 1
+        rightHand.physicsBody?.contactTestBitMask = 1
+        
         leftHand.xScale = 0.1
         leftHand.yScale = 0.1
-        leftHand.position = CGPoint(x: self.size.width/2 - 250, y: self.size.height/2)
+        //leftHand.position = CGPoint(x: (self.size.width/2) - 500, y: self.size.height/2)
+        leftHand.physicsBody?.collisionBitMask = 0
+        leftHand.physicsBody?.categoryBitMask = 1
+        leftHand.physicsBody?.contactTestBitMask = 1
+        
+        ball.xScale = 0.1
+        ball.yScale = 0.1
+        ball.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
+        ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width/2)
+        ball.physicsBody?.categoryBitMask = 0
+        ball.physicsBody?.collisionBitMask = 1
+        ball.physicsBody?.contactTestBitMask = 1
+        ball.physicsBody?.affectedByGravity = false
         addChild(rightHand)
         addChild(leftHand)
+        addChild(ball)
     }
         
     override func update(currentTime: CFTimeInterval) {
