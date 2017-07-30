@@ -14,12 +14,12 @@ class GameScene: SKScene {
     let leftHand = SKSpriteNode(imageNamed: "lefthand")
     let ball = SKSpriteNode(imageNamed: "ball")
     
-    override func didMoveToView(view: SKView) {
-        self.backgroundColor = SKColor.grayColor()
+    override func didMove(to view: SKView) {
+        self.backgroundColor = SKColor.gray
         //rightHand.position = CGPoint(x: (self.size.width/2) + 500, y: self.size.height/2)
         rightHand.xScale = 0.1
         rightHand.yScale = 0.1
-        rightHand.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(rightHand.size.width, rightHand.size.height))
+        rightHand.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: rightHand.size.width, height: rightHand.size.height))
         rightHand.physicsBody?.collisionBitMask = 0
         rightHand.physicsBody?.categoryBitMask = 1
         rightHand.physicsBody?.contactTestBitMask = 1
@@ -44,7 +44,7 @@ class GameScene: SKScene {
         addChild(ball)
     }
         
-    override func update(currentTime: CFTimeInterval) {
+    override func update(_ currentTime: TimeInterval) {
         updateHandPositions()
     }
     
